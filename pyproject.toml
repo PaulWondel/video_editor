@@ -1,0 +1,24 @@
+[project]
+name = "video-editor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Paul Wondel", email = "p.r.wondel@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "ffmpeg>=1.4",
+    "matplotlib>=3.9.4",
+    "moviepy>=2.2.1",
+    "numpy>=2.0.2",
+    "pydub>=0.25.1",
+    "pyside6>=6.10.3",
+]
+
+[project.scripts]
+video-editor = "video_editor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
